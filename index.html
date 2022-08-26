@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de IMC</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de IMC</h1>
+    </header>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col">
+            <p>Altura (ex.: 1.70)</p>
+<input type="number" placeholder="Metros" id="altura">
+<div style="margin: 20px;">
+    <button onclick="limpar()">Limpar</button>
+</div>
+</div>
+<div class="col">
+    <p>Peso (ex.: 65.2)</p>
+<input type="number" placeholder="Quilos" id="peso">
+<div>
+
+</div>
+<div style="margin: 20px;">
+<button onclick="calcularIMC()">Calcular</button>
+</div>
+</div>
+        
+    </div> 
+   
+    <div class="col">
+            <p>IMC:</p>
+<input type="number" readonly placeholder="IMC" id="imc">
+        </div>
+        <div id="tabela">
+            <table class="table" style="margin-top: 40px;">
+                <thead style="background-color: #c4fdffde;">
+                  <tr>
+                    <th scope="col">IMC</th>
+                    <th scope="col">Classificação</th>
+                    <th scope="col">Obesidade</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Menor que 18.5</th>
+                    <td>Magreza</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Entre 18.5 e 24.9</th>
+                    <td>Normal</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Entre 25.0 e 29.9</th>
+                    <td scope="row">Sobrepeso</td>
+                    <td scope="row">I</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Entre 30.0 e 39.9</th>
+                    <td scope="row">Obesidade</td>
+                    <td scope="row">II</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Maior que 40.0</th>
+                    <td scope="row">Obesidade grave</td>
+                    <td scope="row">III</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; Ana Beatriz Martins</p>
+        <p style="color: #d7a0fc">2 A ESCOLA S</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+</html>
