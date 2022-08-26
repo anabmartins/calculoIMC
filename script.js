@@ -15,7 +15,7 @@ if (peso == '' || altura == ''){
     alert("Preencha os campos corretamente!")
 } else {
     // cálculo de IMC
-    calculo = (peso/altura)**2
+    calculo = (peso/altura**2).toFixed(2)
 
     document.getElementById('imc').value = calculo
 
